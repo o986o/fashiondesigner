@@ -32,10 +32,14 @@ function all_loaded(){
 
   $('button').on('click', function(){
   	console.log($(this).attr("class"));
-    if ($(this).hasClass("posX") || $(this).hasClass("posY")){
-  	   var x = Math.floor((Math.random() * 400) + 1);
-     } else if($(this).hasClass("sizeY") || $(this).hasClass("sizeX")){
-       var x = Math.floor((Math.random() * 350) + 50);
+    if ($(this).hasClass("posX")){
+  	   var x = Math.floor((Math.random() * 250) + 20);
+     } else if ($(this).hasClass("posY")){
+     	 var x = Math.floor((Math.random() * 220) -5);
+     } else if ($(this).hasClass("sizeX")){
+       var x = Math.floor((Math.random() * 250) + 5);
+     } else if($(this).hasClass("sizeY")){
+       var x = Math.floor((Math.random() * 300) + 5);
 
      }
   	$(this).siblings('span').text(x);
