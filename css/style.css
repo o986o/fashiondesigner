@@ -35,6 +35,79 @@ body {
   border: 2px solid magenta;
 }
 
+#txt01{
+  position: absolute;
+  top: 95%;
+  left: 3%;
+  width: 100%;
+  z-index: 1;
+}
+
+#t-img{
+  position: absolute;
+  top: 613%;
+  left: 38vw;
+  width: 25%;
+}
+
+#dohee{
+  position: absolute;
+  top: 625%;
+  left: 34.5vw;
+  z-index: 3;
+}
+
+.formula1{
+  position: fixed;
+  top:-2%;
+  left: 73%;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: comicsans;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: yellow;
+  z-index: 2;
+}
+
+.formula2{
+  position: fixed;
+  top:40%;
+  left:-1%;
+  font-size: 2.4em;
+  color: rgba(255,255,255,0.2);
+  font-family: comicsans;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+  z-index: 2;
+}
+
+.english{
+  position: absolute;
+  font-size: 20px;
+  color: blue;
+  font-family: comicsans;
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  text-shadow: -1px 0 Fuchsia , 0 1px Fuchsia ,
+  1px 0 Fuchsia , 0 -1px Fuchsia ;
+  line-height: 148%;
+}
+
+.korean{
+  position: absolute;
+  font-size: 20px;
+  color: yellow;
+  font-family: NanumGothicExtraBold;
+  font-weight: bold;
+  text-shadow: -1px 0 Fuchsia , 0 1px Fuchsia ,
+  1px 0 Fuchsia , 0 -1px Fuchsia ;
+  line-height: 175%;
+}
+
 .mang{
 position: absolute;
 left: 10vw;
@@ -83,7 +156,65 @@ z-index: 1;
   border: 2px solid yellow;
 }
 
+
+.rainbow{
+background: -webkit-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet);
+background: -moz-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet,red);
+background: -o-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet,red);
+background: -ms-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet,red);
+background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,red);
+background-repeat:repeat-x;
+
+-webkit-animation:go 5s linear infinite;
+-moz-animation:go 5s linear infinite;
+-o-animation:go 5s linear infinite;
+-ms-animation:go 5s linear infinite;
+animation:go 5s linear infinite;
+}
+
+@-webkit-keyframes go{
+0%{background-position:0;}
+100%{background-position:200px 0;}
+
+}
+@-moz-keyframes go{
+0%{background-position:0;}
+50%{background-position:100px 0;}
+100%{background-position:200px 0;}
+
+}
+@-o-keyframes go{
+0%{background-position:0;}
+100%{background-position:200px 0;}
+
+}
+@-ms-keyframes go{
+0%{background-position:0;}
+100%{background-position:200px 0;}
+
+}
+@keyframes go{
+0%{background-position:0;}
+100%{background-position:200px 0;}
+
+}
+
+.blink {
+  animation: blinker 5s linear infinite;
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.rotate{
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    50% {-webkit-transform: rotate(360deg);}
+}
+
 #style-8::-webkit-scrollbar-corner {
   -webkit-box-shadow: inset 0 0 6px black;
   background-color: yellow;
-  border: 2px solid yellow;
